@@ -1,0 +1,132 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  background: var(--bg-deep);
+  position: relative;
+  z-index: 1;
+}
+
+.auth-brand-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  background: radial-gradient(circle at 25% 25%, #241a45 0%, #100a24 60%, #0a0714 100%);
+  background-image:
+    repeating-linear-gradient(to bottom, transparent, transparent 39px, rgba(167, 139, 250, 0.05) 40px),
+    radial-gradient(circle at 25% 25%, #241a45 0%, #100a24 60%, #0a0714 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-brand-panel::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: var(--gold);
+  filter: blur(100px);
+  opacity: 0.22;
+  top: -100px;
+  right: -80px;
+  animation: floatOrbA 18s ease-in-out infinite;
+}
+
+.auth-brand-icon {
+  color: var(--gold);
+  opacity: 0.9;
+  margin-bottom: 24px;
+  animation: floatBob 4s ease-in-out infinite;
+  position: relative;
+}
+
+.auth-brand-mark {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.auth-brand-headline {
+  font-family: var(--font-display);
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--ink);
+  max-width: 420px;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.auth-brand-sub {
+  font-size: 14px;
+  color: var(--ink-dim);
+  max-width: 380px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.auth-form-panel {
+  width: 460px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(10, 7, 20, 0.7);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid var(--border-soft);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 360px;
+}
+
+.auth-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-dim);
+  margin: 0 0 26px;
+}
+
+.auth-switch {
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-dim);
+  margin-top: 22px;
+}
+
+.auth-switch a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 860px) {
+  .auth-brand-panel {
+    display: none;
+  }
+  .auth-form-panel {
+    width: 100%;
+    border-left: none;
+  }
+}
