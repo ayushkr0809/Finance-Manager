@@ -2,8 +2,6 @@
   min-height: 100vh;
   display: flex;
   background: var(--bg-deep);
-  position: relative;
-  z-index: 1;
 }
 
 .auth-brand-panel {
@@ -16,30 +14,12 @@
   background-image:
     repeating-linear-gradient(to bottom, transparent, transparent 39px, rgba(167, 139, 250, 0.05) 40px),
     radial-gradient(circle at 25% 25%, #241a45 0%, #100a24 60%, #0a0714 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.auth-brand-panel::before {
-  content: "";
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background: var(--gold);
-  filter: blur(100px);
-  opacity: 0.22;
-  top: -100px;
-  right: -80px;
-  animation: floatOrbA 18s ease-in-out infinite;
 }
 
 .auth-brand-icon {
   color: var(--gold);
   opacity: 0.9;
   margin-bottom: 24px;
-  animation: floatBob 4s ease-in-out infinite;
-  position: relative;
 }
 
 .auth-brand-mark {
@@ -50,7 +30,6 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin: 0 0 20px;
-  position: relative;
 }
 
 .auth-brand-headline {
@@ -61,7 +40,6 @@
   color: var(--ink);
   max-width: 420px;
   margin: 0 0 20px;
-  position: relative;
 }
 
 .auth-brand-sub {
@@ -69,7 +47,6 @@
   color: var(--ink-dim);
   max-width: 380px;
   line-height: 1.6;
-  position: relative;
 }
 
 .auth-form-panel {
@@ -79,8 +56,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background: rgba(10, 7, 20, 0.7);
-  backdrop-filter: blur(20px);
+  background: var(--bg-panel);
   border-left: 1px solid var(--border-soft);
 }
 
