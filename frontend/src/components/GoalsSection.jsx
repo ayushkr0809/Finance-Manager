@@ -122,7 +122,7 @@ export default function GoalsSection() {
             <div className="goal-card-header">
               <div>
                 <h3 style={{ display: "flex", alignItems: "center", gap: 8, margin: 0 }}>
-                  <Target size={16} color="var(--emerald)" />
+                  <Target size={16} color="var(--emerald)" className="float-icon" />
                   {g.name}
                 </h3>
                 {g.target_date && <p className="recent-badge">Target: {g.target_date}</p>}

@@ -84,7 +84,7 @@ export default function OverviewSection({ username, onNavigate }) {
         <div className="balance-cards">
           <div className="balance-card accent-emerald">
             <div className="label">
-              <TrendingUp size={13} style={{ marginRight: 5, verticalAlign: "-2px" }} />
+              <TrendingUp size={13} className="float-icon" style={{ marginRight: 5, verticalAlign: "-2px" }} />
               Income
             </div>
             <div className="value" style={{ color: "var(--emerald)" }}>
@@ -93,7 +93,7 @@ export default function OverviewSection({ username, onNavigate }) {
           </div>
           <div className="balance-card accent-rose">
             <div className="label">
-              <TrendingDown size={13} style={{ marginRight: 5, verticalAlign: "-2px" }} />
+              <TrendingDown size={13} className="float-icon" style={{ marginRight: 5, verticalAlign: "-2px" }} />
               Expense
             </div>
             <div className="value" style={{ color: "var(--rose)" }}>
@@ -102,7 +102,7 @@ export default function OverviewSection({ username, onNavigate }) {
           </div>
           <div className="balance-card">
             <div className="label">
-              <Wallet size={13} style={{ marginRight: 5, verticalAlign: "-2px" }} />
+              <Wallet size={13} className="float-icon" style={{ marginRight: 5, verticalAlign: "-2px" }} />
               Balance
             </div>
             <div className="value">{formatMoney(balance.balance)}</div>
